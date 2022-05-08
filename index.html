@@ -173,6 +173,20 @@
             margin-top: 4px;
             margin-bottom: 4px;
         }
+
+        a {
+            font-weight: bold;
+            color: white;
+        }
+        a:visited {
+            color: white;
+        }
+        a:hover {
+            color: burlywood;
+        }
+        a:active {
+            color: white;
+        }
     </style>
     <title>View Parameters</title>
 </head>
@@ -198,7 +212,10 @@
 <button class="button plus" id="paramPlusButton">+</button>
 <br>
 <button class="button" id="makeURIButton">submit</button>
-<input type="text" id="makeURI" value="" class="result_input" style="border: 1px solid #000000;"/>
+<input type="text" id="makeURI" value="" class="result_input" style="border: 1px solid #000000;"/><br>
+<div style="width: 401px; text-align: right;">
+    <p style="color: #ffffff;">github by <a href="https://github.com/kk99corn/vParam" target="_blank">@kk99corn</a></p>
+</div>
 <script src="index.js"></script>
 </body>
 </html>
