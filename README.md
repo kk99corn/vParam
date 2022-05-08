@@ -1,2 +1,2 @@
 # vParam
-View Parameters in Chrome Extensions
+View Parameters in Chrom Extensions
