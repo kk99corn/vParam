@@ -1,37 +1,4 @@
 function getParam() {
-    // var currentUrl = location.href;
-    // var urlText = "";
-    // var parameterText = "";
-    // if (currentUrl.indexOf('?') !== -1) {
-    //     urlText = currentUrl.substring(0, currentUrl.indexOf('?'));
-    //     parameterText = currentUrl.substring(currentUrl.indexOf('?') + 1, currentUrl.length);
-    // } else {
-    //     urlText = currentUrl;
-    // }
-    // document.getElementById("urlText").innerHTML = urlText;
-    //
-    // var parameterList = parameterText.split('&');
-    // var innerHtml = "";
-    // var paramIndex = 0;
-    // for (var i_1 = 0; i_1 < parameterList.length; i_1++) {
-    //     if (parameterList[i_1] !== '') {
-    //         var paramKV = parameterList[i_1].split('=');
-    //         var paramK = paramKV[0];
-    //         var paramV = (paramKV[1]) ? decodeURIComponent(paramKV[1]) : "";
-    //         innerHtml += "\n" +
-    //             "                <tr scope=\"row\">\n" +
-    //             "                    <th scope=\"row\">\n" +
-    //             "                        <input type=\"checkbox\" id=\"c_" + paramIndex + "\" checked/>\n" +
-    //             "                    </th>\n" +
-    //             "                    <td><input type=\"text\" id=\"k_" + paramIndex + "\" value=\"" + paramK + "\" style='width: 100px'/></td>\n" +
-    //             "                    <td><input type=\"text\" id=\"v_" + paramIndex + "\" value=\"" + paramV + "\" style='width: 250px'/></td>\n" +
-    //             "                </tr>";
-    //         paramIndex++;
-    //     }
-    // }
-    // document.getElementById("parameterList").innerHTML = innerHtml;
-
-
     chrome.tabs.query({active: true, lastFocusedWindow: true}, function (tabs) {
         var url = tabs[0].url;
 
