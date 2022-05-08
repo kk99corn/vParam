@@ -19,7 +19,7 @@ function getParam() {
         for (var i_1 = 0; i_1 < parameterList.length; i_1++) {
             if (parameterList[i_1] !== '') {
                 var paramKV = parameterList[i_1].split('=');
-                var paramK = paramKV[0];
+                var paramK = (paramKV[0]) ? decodeURIComponent(paramKV[0]) : "";
                 var paramV = (paramKV[1]) ? decodeURIComponent(paramKV[1]) : "";
                 innerHtml += "\n" +
                     "                <tr scope=\"row\">\n" +
@@ -57,7 +57,7 @@ function makeURI() {
             var key = document.getElementById("k_" + i).value;
             var value = document.getElementById("v_" + i).value;
             if (paramCount !== 0) paramString += '&';
-            paramString += key + "=" + encodeURIComponent(value);
+            paramString += encodeURIComponent(key) + "=" + encodeURIComponent(value);
             paramCount++;
         }
     }
