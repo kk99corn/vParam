@@ -178,21 +178,30 @@
             font-weight: bold;
             color: white;
         }
+
         a:visited {
             color: white;
         }
+
         a:hover {
             color: burlywood;
         }
+
         a:active {
             color: white;
+        }
+
+        .url_title {
+            overflow: hidden;
+            word-wrap: break-word;
+            width: 400px;
         }
     </style>
     <title>View Parameters</title>
 </head>
 <body>
 <h2>View Parameters</h2>
-<p>URL: <b><span id="urlText"></span></b></p>
+<p class="url_title">URL: <b><span id="urlText"></span></b></p>
 <table class="table custom-table">
     <thead>
     <tr>
